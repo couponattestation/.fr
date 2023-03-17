@@ -1,0 +1,42 @@
+.am-buttons {
+    display: flex;
+  }
+  .amb-half {
+    flex: 1 1 50%;
+  }
+  .amb-half:first-child {
+    margin-right: 0.5rem;
+  }
+  .amb-half:first-child:active,
+  .amb-half:first-child:focus {
+    background-color: transparent;
+    color: #191820;
+    border: 2px solid;
+  }
+  .amb-add {
+    background-color: transparent;
+    color: #191820;
+    border: 2px solid;
+  
+    font-family: Unna;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+  
+    transition: 0.1s background-color linear, 0.1s color linear;
+  }
+  .amb-add:hover {
+    background-color: #191820;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .am-buttons {
+      flex-direction: column;
+    }
+    .amb-half:first-child {
+      margin: 0 0 1rem;
+      line-height: 1.6em;
+      font-size: 22px;
+    }
+  }
